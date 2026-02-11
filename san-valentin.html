@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ay vale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Feliz día (comercial) del amor y la amistad!</h1>
+        <p class="subtitle">Pero nosotras llevamos celebrando nuestra amistad desde hace...</p>
+
+        <div class="counter-grid">
+            <div class="time-box">
+                <span class="number" id="months">0</span>
+                <span class="label">Meses</span>
+            </div>
+            <div class="time-box">
+                <span class="number" id="weeks">0</span>
+                <span class="label">Semanas</span>
+            </div>
+            <div class="time-box">
+                <span class="number" id="days">0</span>
+                <span class="label">Días</span>
+            </div>
+            <div class="time-box">
+                <span class="number" id="hours">0</span>
+                <span class="label">Horas</span>
+            </div>
+            <div class="time-box">
+                <span class="number" id="minutes">0</span>
+                <span class="label">Minutos</span>
+            </div>
+            <div class="time-box heart-box" aria-hidden="false">
+                <div class="heart-icons" role="img" aria-label="corazones azul y amarillo">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#1E90FF" aria-hidden="true">
+                        <path d="M12 21s-8-5.333-8-10A5 5 0 0 1 12 6a5 5 0 0 1 8 5c0 4.667-8 10-8 10z" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#FFD700" aria-hidden="true">
+                        <path d="M12 21s-8-5.333-8-10A5 5 0 0 1 12 6a5 5 0 0 1 8 5c0 4.667-8 10-8 10z" />
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="player-container" onclick="toggleMusic()">
+            <div class="tone-arm" id="toneArm"></div>
+            <div class="vinyl" id="vinylRecord">
+                <div class="vinyl-label"></div>
+            </div>
+        </div>
+        <p class="play-msg">🎵 Toca el disco para escuchar un rolazo 🎵</p>
+
+        <div class="message-box"id="equivalence">Calculando equivalencias...
+        </div>
+        <!-- <div class="equivalence-footer" id="equivalence">Calculando equivalencias...</div> -->
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="Morfina.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+<script src="scripts.js"></script>
+</body>
+</html>
